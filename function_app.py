@@ -20,6 +20,6 @@ def create_meal(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse(f"Hello, {name}. This HTTP triggered function deployed from GitHub Successfully.")
     else:
         return func.HttpResponse(
-             "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.",
+             "This HTTP triggered function executed successfully with CI/CD deoloyments. Pass a name in the query string or in the request body for a personalized response.",
              status_code=200
         )
